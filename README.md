@@ -10,7 +10,8 @@ Unfortunately not all SQL vendors catched up with those improvements (e.g. Postg
 for all kinds of errors).
 
 This projects borrows the idea and code from [Spring Framework.](https://github.com/spring-projects/spring-framework)
-It provides simplified version of [SQLExceptionTranslator](https://github.com/spring-projects/spring-framework/blob/master/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionTranslator.java) - [SqlExceptionMapper](src/main/java/net/bzdyl/sqlexmapper/SqlExceptionMapper).
+It provides simplified version of [SQLExceptionTranslator](https://github.com/spring-projects/spring-framework/blob/master/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionTranslator.java) -
+ [SqlExceptionMapper.](src/main/java/net/bzdyl/sqlexmapper/SqlExceptionMapper.java)
 
 The default implementation of `SqlExceptionMapper` provides translation similar to [SQLErrorCodeSQLExceptionTranslator](https://github.com/spring-projects/spring-framework/blob/master/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLErrorCodeSQLExceptionTranslator.java)
 and uses the same [error codes mapping.](https://github.com/spring-projects/spring-framework/blob/master/spring-jdbc/src/main/resources/org/springframework/jdbc/support/sql-error-codes.xml)
