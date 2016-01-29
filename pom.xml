@@ -8,6 +8,29 @@
 
   <name>sqlex-mapper</name>
   <url>https://github.com/pbzdyl/sqlex-mapper</url>
+  <description>Map java.sql.SQLException to more a meaningful exceptions hierarchy</description>
+
+  <scm>
+    <url>https://github.com/pbzdyl/sqlex-mapper</url>
+    <connection>scm:git:https://github.com/pbzdyl/sqlex-mapper.git</connection>
+    <developerConnection>scm:git:https://github.com/pbzdyl/sqlex-mapper.git</developerConnection>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>piotr@bzdyl.net</id>
+      <name>Piotr Bzdyl</name>
+      <email>piotr@bzdyl.net</email>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
