@@ -55,4 +55,22 @@ public class SqlExceptionMapperImplTest {
                 .isExactlyInstanceOf(DuplicateKeyException.class)
                 .hasCause(sourceException);
     }
+
+    @Test
+    public void mapsUnknownErrorCodeToGenericSqlException() throws Exception {
+        ErrorCodesMapping errorCodesMapping = ErrorCodesMappingImpl.builder()
+                .withEntry(DuplicateKeyException.class, "0")
+                .build();
+        SQLException sourceException = new SQLException("Test", "unknown state", 1);
+        SqlExceptionMapper mapper = new SqlExceptionMapperImpl(errorCodesMapping);
+
+        // when
+        SqlException resultException = mapper.map(sourceException);
+
+        // then
+        assertThat(resultException)
+                .isNotNull()
+                .isExactlyInstanceOf(SqlException.class)
+                .hasCause(sourceException);
+    }
 }

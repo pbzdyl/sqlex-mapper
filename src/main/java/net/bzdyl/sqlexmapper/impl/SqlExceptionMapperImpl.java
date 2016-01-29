@@ -43,7 +43,7 @@ public class SqlExceptionMapperImpl implements SqlExceptionMapper {
             return createException(exceptionClass, sqlEx);
         }
 
-        return null;
+        return new SqlException(sqlEx);
     }
 
     private static SqlException createException(Class<? extends SqlException> exceptionClass, Throwable cause) {
