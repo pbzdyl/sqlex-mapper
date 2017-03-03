@@ -1,6 +1,6 @@
 # sqlex-mapper
 
-## Map `java.sql.SQLException` to more a meaningful exceptions hierarchy
+## Map `java.sql.SQLException` to a more meaningful exceptions hierarchy
 
 Exception handling in JDBC is not easy. It provides base `java.sql.SQLException` with `getSQLState` and `getErrorCode`
 information but it's vendor specific and cumbersome to use. Yes, JDBC 4 (since Java 6) provides some improvements
